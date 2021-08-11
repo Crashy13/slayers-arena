@@ -6,16 +6,16 @@ let GameManager = {
   resetPlayer: function(classType) {
     switch(classType) {
       case "Knight":
-        player = new Player(classType, 200, 0, 200, 100, 50);
+        player = new Player(classType, 200, 0, 200, 50, 50);
         break;
       case "Archer":
-        player = new Player(classType, 200, 0, 50, 150, 100);
+        player = new Player(classType, 150, 0, 40, 150, 100);
         break;
       case "Assassin":
-        player = new Player(classType, 100, 0, 20, 200, 200);
+        player = new Player(classType, 120, 0, 20, 200, 200);
         break;
       case "Mage":
-        player = new Player(classType, 80, 0, 50, 200, 50);
+        player = new Player(classType, 100, 0, 50, 140, 50);
         break;
     }
     let getInterface = document.querySelector('.interface');
@@ -33,9 +33,9 @@ let GameManager = {
     let getHeader = document.querySelector('.header');
     let getActions = document.querySelector('.actions');
     let getEnemy = document.querySelector('.enemy');
-    let enemy00 = new Enemy("Ogre", 100, 0, 80, 100, 100);
-    let enemy01 = new Enemy("Golem", 150, 0, 100, 120, 100);
-    let enemy02 = new Enemy("Dragon", 200, 0, 100, 150, 150);
+    let enemy00 = new Enemy("Ogre", 130, 0, 80, 100, 100);
+    let enemy01 = new Enemy("Golem", 150, 0, 100, 80, 100);
+    let enemy02 = new Enemy("Dragon", 200, 0, 150, 80, 150);
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(3));
     switch(chooseRandomEnemy) {
       case 0:
