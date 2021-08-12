@@ -9,13 +9,13 @@ let GameManager = {
         player = new Player(classType, 200, 0, 200, 50, 50);
         break;
       case "Archer":
-        player = new Player(classType, 150, 0, 40, 150, 100);
+        player = new Player(classType, 140, 0, 40, 150, 100);
         break;
       case "Assassin":
-        player = new Player(classType, 120, 0, 20, 200, 200);
+        player = new Player(classType, 100, 0, 20, 200, 200);
         break;
       case "Mage":
-        player = new Player(classType, 100, 0, 50, 140, 50);
+        player = new Player(classType, 120, 140, 50, 140, 50);
         break;
     }
     let getInterface = document.querySelector('.interface');
